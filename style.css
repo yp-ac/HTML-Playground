@@ -2,7 +2,9 @@
 
 :root {
     --color-red: #ef395a;
+    --color-red-dark: #892033;
     --color-green: #39ef7f;
+    --color-white: #eee;
 }
 
 * {
@@ -28,8 +30,6 @@ nav li {
     float: right;
     height: 100%;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav li:first-child {
@@ -37,16 +37,16 @@ nav li:first-child {
 }
 
 nav li.active {
-    background-color: #eee;
+    background-color: var(--color-white);
 }
 
 nav li:hover {
-    background-color: #892033;
+    background-color: var(--color-red-dark);
 }
 
 nav li a {
     display: block;
-    color: #eee;
+    color: var(--color-white);
     height: 100%;
     padding: 10px;
     text-decoration: none;
@@ -57,5 +57,5 @@ nav li.active a {
 }
 
 nav li:hover a {
-    color: #fff;
+    color: var(--color-white);
 }
