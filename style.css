@@ -99,9 +99,8 @@ nav li:hover a i { opacity: 1; }
 
 .logo-main:hover {
     text-shadow: 0 0 10px var(--color-red-dark),
-                 0 0 20px var(--color-red-dark),
-                 0 0 40px var(--color-red-dark),
-                 0 0 80px var(--color-red-dark);
+    0 0 20px var(--color-red-dark),
+    0 0 40px var(--color-red-dark);
 }
 
 .logo-main::after {
@@ -125,6 +124,46 @@ nav li:hover a i { opacity: 1; }
     opacity: 1;
 }
 
+/* Learn Page Styles */
 section {
-    height: 100vh
+    max-width: 900px;
+    margin: auto;
+}
+
+section.content {
+    background: linen url(./assets/circle-scatter-haikei.svg) no-repeat center top;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+section h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: var(--color-red-dark)
+}
+
+section.content ul {
+    list-style-type: none;
+    padding-left: 4rem;
+}
+
+section.content li {
+    padding: 0.5rem 0;
+}
+
+section.content li a {
+    color: var(--color-red);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: font-size 0.5s ease-in-out;
+}
+
+section.content li a:hover {
+    color: var(--color-red-spot);
+    text-decoration: underline;
+    font-size: 1.75rem;
+}
+
+section.content li a:visited {
+    color: var(--color-red-dark);
 }
