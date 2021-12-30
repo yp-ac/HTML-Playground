@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Roboto:wght@300;700;900&display=swap');
 
 :root {
     --color-red: #ef395a;
+    --color-red-spot: #eea2a4;
+    --color-red-spot-twisted: #bffcfa;
     --color-red-dark: #892033;
     --color-green: #39ef7f;
     --color-white: #eee;
@@ -12,10 +14,17 @@
     padding: 0;
 }
 
+body {
+    background: linen;
+}
+
+/* Nav Bar Styles */
 nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     height: 40px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -53,9 +62,63 @@ nav li a {
 }
 
 nav li.active a {
+    font-size: 1.2rem;
     color: var(--color-red);
 }
 
 nav li:hover a {
     color: var(--color-white);
+}
+
+/* Background & Logo */
+.font-fira {
+    font-family: 'fira code', 'Consolas', 'Courier New', monospace;
+}
+
+.fp {
+    background: linen url(./assets/wave-haikei.svg) no-repeat center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.logo-main {
+    color: var(--color-red);
+    font-size: 8rem;
+}
+
+.logo-main:hover {
+    text-shadow: 0 0 10px var(--color-red-dark),
+                 0 0 20px var(--color-red-dark),
+                 0 0 40px var(--color-red-dark),
+                 0 0 80px var(--color-red-dark);
+}
+
+.logo-main::after {
+    content: ' HTML';
+    display: inline;
+    font-weight: 700;
+}
+
+.logo-name {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-red);
+    opacity: 0.8;
+}
+
+.logo-name::after {
+    content: 'Playground';
+    position: absolute;
+    translate: -100%;
+    -webkit-text-stroke: 2px var(--color-red-spot-twisted);
+}
+
+section {
+    height: 100vh
 }
