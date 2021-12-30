@@ -21,11 +21,13 @@
             <li><a href="https://github.com/yp-gpp/HTML-Playground"><i class="fab fa-github" aria-hidden="true"></i> Source</a></li>
         </ul>
     </nav>
+
+    <!-- Content Navigation -->
     <section class="content">
         <div class="content">
             <h1>Contents</h1>
             <ul>
-                <li><a href="#template">Template</a></li>
+                <li><a href="#basics">Basics</a></li>
                 <li><a href="#headings">Headings</a></li>
                 <li><a href="#text-formatting">Text Formatting</a></li>
                 <li><a href="#image">Images</a></li>
@@ -36,5 +38,98 @@
             </ul>
         </div>
     </section>
+
+    <hr>
+    <section id="basics">
+        <h1>Basics</h1>
+        <p>When writting HTML, a basic layout is to be followed, it looks like: </p>
+
+        <pre class="prettyprint language-html"><xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title of the Page</title>
+    </head>
+    <body>
+        Content Goes here
+    </body>
+</html>
+        </xmp></pre>
+
+        <p>Let's try to understand what this template is, <code><span class="tag">!Doctype html</span></code> is declaring the type of document you are writting, in this case we are writting html, it does not have any closing tag.. The <code><span class="tag">html</span></code> tag wraps around the whole content of the webpage, it has a closing tag <code><span class="tag">/html</span></code>. The <code><span class="tag">head</span></code> tag contains the metadata about the html document, <code><span class="tag">title</span></code> is one of the tag used inside the <code><span class="tag">head</span></code>, which is used to define the title of the page which we are able to see on the tab of browser. the <code><span class="tag">body</span></code> is the tag in which the content which is to be displayed to the user is written. All these tags also have a closing tag.</p>
+    </section>
+
+    <hr>
+    <section id="headings">
+        <h1>Headings</h1>
+        <p>HTML headings are titles or subtitles that you want to add to your webpage. there are 6 heading tags ( 
+            <code><span class="tag">h1</span></code>, 
+            <code><span class="tag">h2</span></code>, 
+            <code><span class="tag">h3</span></code>, 
+            <code><span class="tag">h4</span></code>, 
+            <code><span class="tag">h5</span></code>, 
+            <code><span class="tag">h6</span></code> ) <code><span class="tag">h1</span></code> having the largest font size and <code><span class="tag">h6</span></code> having the smallest of them.</p>
+        
+        <p>Let's have a look at an example program:</p>
+        <pre class="prettyprint language-html"><xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Headings</title>
+    </head>
+    <body>
+        <h1>My Heading 1</h1>
+        <h2>My Heading 2</h2>
+        <h3>My Heading 3</h3>
+        <h4>My Heading 4</h4>
+        <h5>My Heading 5</h5>
+        <h6>My Heading 6</h6>
+    </body>
+</html>
+        </xmp></pre>
+        
+        <iframe src="examples/headings.html" title="Output:" class="output" id="heading-frame" frameborder="0"></iframe>
+    </section>
+
+    <hr>
+    <section id="text-formatting">
+        <h1>Text Formatting</h1>
+        <p>There are many tags in html which help in formatting the text in different way.</p>
+        
+        <h2>Bold</h2>
+        <p>The <code><span class="tag">b</span></code> tag increases the weight of the font, example: <code><span class="tag">b</span>This text<span class="tag">/b</span></code> will look like "<b>This Text</b>".</p>
+
+        <h2>Italic</h2>
+        <p>The <code><span class="tag">i</span></code> tag is used to have italic effect on the text, example: <code><span class="tag">i</span>text in italics<span class="tag">/i</span></code> will be rendered as "<i>text in italics</i>".</p>
+
+        <h2>Strong</h2>
+        <p><code><span class="tag">strong</span></code> is used to mark some text important, example: <code><span class="tag">strong</span>This is important!<span class="tag">/strong</span></code>, will be rendered as "<strong>This is important!</strong>".</p>
+
+        <h2>Emphasize</h2>
+        <p>The <code><span class="tag">em</span></code> tag is used to emphasize text, example: <code><span class="tag">em</span>emphasized text<span class="tag">/em</span></code> will be displayed as "<em>emphasized text</em>".</p>
+
+        <h2>Underline</h2>
+        <p>The <code><span class="tag">u</span></code> tag is used to underline the text, example: <code><span class="tag">u</span>Underlined text<span class="tag">/u</span></code> will be displayed as "<u>Underlined text</u>".</p>
+
+        <h2>Small</h2>
+        <p><code><span class="tag">small</span></code> tag is used to make the font size to a smaller size, example: <code><span class="tag">small</span>small text<span class="tag">/small</span></code> will be displayed as: "<small>small text</small>".</p>
+
+        <h2>Mark</h2>
+        <p>To highlight some text, use the <code><span class="tag">mark</span></code> tag, example: <code><span class="tag">mark</span>Marked text<span class="tag">/mark</span></code> <span class="font-fira"> ~~> </span> "<mark>Marked text</mark>".</p>
+
+        <h2>Delete & Insert</h2>
+        <p><code><span class="tag">del</span></code> is same as strikethrough in MS Word and the <code><span class="tag">ins</span></code> underlines the inserted text, example: <code><span class="tag">del</span>deleted<span class="tag">/del</span><span class="tag">ins</span>inserted<span class="tag">/ins</span></code> <span class="font-fira">~~></span> "<del>deleted</del><ins>inserted</ins>".</p>
+
+        <h2>Subscript</h2>
+        <p><code><span class="tag">sub</span></code> is used to insert a subscript, <code>H<span class="tag">sub</span>2<span class="tag">/sub</span></code> <span class="font-fira">~~></span> "H<sub>2</sub>".</p>
+
+        <h2>Superscript</h2>
+        <p><code><span class="tag">sup</span></code> is used to insert a superscript, <code>X<span class="tag">sub</span>2<span class="tag">/sub</span></code> <span class="font-fira">~~></span> "X<sub>2</sub>".</p>
+    </section>
+
+    <hr>
+    <footer>
+        <small>&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
+    </footer>
 </body>
 </html>

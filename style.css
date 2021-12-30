@@ -3,8 +3,9 @@
 :root {
     --color-red: #ef395a;
     --color-red-spot: #eea2a4;
-    --color-red-spot-twisted: #bffcfa;
+    --color-red-spot-twisted: #59bab8;
     --color-red-dark: #892033;
+    --color-red-switch: #700000;
     --color-green: #39ef7f;
     --color-white: #eee;
 }
@@ -16,6 +17,7 @@
 
 body {
     background: linen;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 /* Nav Bar Styles */
@@ -124,6 +126,18 @@ nav li:hover a i { opacity: 1; }
     opacity: 1;
 }
 
+hr {
+    margin: 1rem auto;
+    max-width: 900px;
+    color: var(--color-red);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
 /* Learn Page Styles */
 section {
     max-width: 900px;
@@ -132,13 +146,19 @@ section {
 
 section.content {
     background: linen url(./assets/circle-scatter-haikei.svg) no-repeat center top;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 section h1 {
     font-size: 3rem;
     padding-top: 2rem;
     color: var(--color-red-dark)
+}
+
+section h2 {
+    font-size: 2rem;
+    padding-top:0.5rem;
+    margin-left: 0.5rem;
+    color: var(--color-red-switch);
 }
 
 section.content ul {
@@ -155,7 +175,7 @@ section.content li a {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
-    transition: font-size 0.5s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
 }
 
 section.content li a:hover {
@@ -167,3 +187,48 @@ section.content li a:hover {
 section.content li a:visited {
     color: var(--color-red-dark);
 }
+
+pre {
+    background: rgb(241, 241, 245);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(100, 100, 100, 30);
+    margin-top: 1rem; 
+}
+
+code, pre {
+    font-family: 'Fira Code', consolas, monospace;
+}
+
+code span.tag { margin: 0 4px; }
+
+code span.tag::before { content: '<' }
+
+code span.tag::after { content: '>' }
+
+section p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0.5rem; 
+    line-height: 1.5;
+}
+
+section p code {
+    background: rgb(227, 241, 238);
+    border: 1px solid #555;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+iframe.output {
+    background: #fff;
+    width: 97%;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 3px;
+}
+
+#heading-frame {
+    height: 300px;
+}
+
+
