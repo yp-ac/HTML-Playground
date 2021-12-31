@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Playground</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <style>
+        .fp { 
+            background-image: url(./assets/stacked-waves-haikei.svg); 
+            min-height: 70vh;
+        }
+
+        .logo-main { color: rgb(198, 241, 225); }
+
+        .logo-main::after {
+            content: ' CSS';
+            display: inline;
+            font-weight: 700;
+        }
+        
+        .logo-main:hover { 
+            text-shadow: none;
+        }
+        
+        .logo-name { color: #fff; opacity: 1; }
+
+        nav ul, nav li { background-color: var(--color-green); }
+
+        nav li.active a { color: var(--color-green); }
+
+        nav li:hover { background-color: var(--color-green-dark); }
+
+        section h1 { color: var(--color-green-dark); }
+
+        hr { color: var(--color-green); }
+    </style>
+</head>
+<body>
+    <div class="fp">
+        <span class="logo-main"><i class="fab fa-css3"></i></span><br>
+        <span class="logo-name">Playground</span>
+
+        <div class="tagline font-fira"><br>Learn, Style, Build, Beautify.</div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav>
+        <ul>
+            <li class="active"><a href="https://yp-gpp.github.io/HTML-playground"><i class="fab fa-css3"></i> Playground</a></li>
+            <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+            <li><a href="learn.html"><i class="fa fa-book" aria-hidden="true"></i> Learn</a></li>
+            <li><a href="https://github.com/yp-gpp/HTML-Playground"><i class="fab fa-github" aria-hidden="true"></i> Source</a></li>
+            <li><a href="css.html"><i class="fab fa-css3" aria-hidden="true"></i> CSS</a></li>
+        </ul>
+    </nav>
+
+    <section id="main">
+        <h1>Comming Soon!</h1>
+        <small style="color: var(--color-green); font-family: 'Fira code', monospace; font-size: 1.2rem;">Not really</small>
+    </section>
+
+    <hr>
+    <footer>
+        <small>&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
+    </footer>
+</body>
+</html>
