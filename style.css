@@ -130,7 +130,11 @@ nav li:hover a i { opacity: 1; }
 hr {
     margin: 1rem auto;
     max-width: 900px;
-    color: var(--color-red);
+    /* color: var(--color-red);        */
+    height: 3px;
+    background-color: var(--color-red);
+    border: none;
+
 }
 
 footer {
