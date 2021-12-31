@@ -128,6 +128,33 @@
     </section>
 
     <hr>
+    <section id="image">
+        <h1>Images</h1>
+        <p>Images can be added in HTML using <code><span class="tag">img</span></code> tag, it is very simple <code><span class="tag">img src="images/image.jpg"</span></code> is its basic syntax, it will output the following:</p>
+        <img src="images/image.jpg" alt="demo image from unsplash" style="width: 80%;" hspace="10">
+        <p>Let's try to understand in detail what is the <code>src="images/image.jpg"</code>, the src is called the attribute, tags have multiple attributes, in the case of <code><span class="tag">img</span></code> tag, src is used to give the path/name of the image. there are many other attributes
+            <br><u>src</u> <span class="font-fira"> -></span> Specifies the URL/Path to the image.
+            <br><u>alt</u> <span class="font-fira"> -></span> If there is some reason image is not displayed, the alt text will be displayed.
+            <br><u>height</u> <span class="font-fira"> -></span> Specifies the height the image.
+            <br><u>width</u> <span class="font-fira"> -></span> Specifies the width the image.
+            <br><u>style</u> <span class="font-fira"> -></span> Specifies the CSS styles for the image.
+            <br><u>hspace</u> <span class="font-fira"> -></span> Specifies the horizontal empty space around the image.
+            <br><u>vspace</u> <span class="font-fira"> -></span> Specifies the vertical empty space around the image.
+        </p>
+        <h2>Server Side image maps</h2>
+        <p>A server side image map will allow you to get the coordinates of where the user clicked on an image. the x-coordinate and y-coordinate gets appended to the redirect url, and the <code><span class="tag">a</span></code> tag is necessary for it to work, also the <code><span>ismap</span></code> keywords, let's see a example: </p>
+        <pre class="prettyprint language-html"><xmp>
+<a href="#">
+    <img src="images/image2.jpg" ismap>
+</a>
+        </xmp></pre> <br><br>
+        <a href="#">
+            <img src="images/image2.jpg" alt="server map" style="width: 95%;" ismap>
+        </a>
+        <p>If you click anywhere on the above image, it will add <code>?x-coordinate,y-coordinate</code> to the URL, check the address bar.</p> 
+    </section>
+
+    <hr>
     <footer>
         <small>&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
     </footer>
