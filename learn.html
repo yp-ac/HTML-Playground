@@ -135,7 +135,9 @@
     <section id="image">
         <h1>Images</h1>
         <p>Images can be added in HTML using <code><span class="tag">img</span></code> tag, it is very simple <code><span class="tag">img src="images/image.jpg"</span></code> is its basic syntax, it will output the following:</p>
-        <img src="images/image.jpg" alt="demo image from unsplash" style="width: 80%;" hspace="10">
+        <div class="output">
+            <img src="images/image.jpg" alt="demo image from unsplash" style="width: 80%;" hspace="10">
+        </div>
         <p>Let's try to understand in detail what is the <code>src="images/image.jpg"</code>, the src is called the attribute, tags have multiple attributes, in the case of <code><span class="tag">img</span></code> tag, src is used to give the path/name of the image. there are many other attributes
             <br><u>src</u> <span class="font-fira"> -></span> Specifies the URL/Path to the image.
             <br><u>alt</u> <span class="font-fira"> -></span> If there is some reason image is not displayed, the alt text will be displayed.
@@ -152,16 +154,78 @@
     <img src="images/image2.jpg" ismap>
 </a>
         </xmp></pre> <br><br>
-        <a href="#">
-            <img src="images/image2.jpg" alt="server map" style="width: 95%;" ismap>
-        </a>
+
+        <div class="output">
+            <a href="#">
+                <img src="images/image2.jpg" alt="server map" style="width: 95%;" ismap>
+            </a>
+        </div>
         <p>If you click anywhere on the above image, it will add <code>?x-coordinate,y-coordinate</code> to the URL, check the address bar.</p> 
     </section>
 
     <hr>
     <section id="list">
         <h1>Lists</h1>
+        <p>lists in HTML allow web developers to group items in lists.
+        There are 3 different types of lists, Ordered lists, Unordered lists and Description lists.</p>
 
+        <h2>Ordered List</h2>
+        <p>An ordered list starts with <code><span class="tag">ol</span></code> tag and each item in the list starts with the <code><span class="tag">li</span></code> tag, both have ending tag. The marker type can be changed using the type attribute (<code>type="1"</code>) of <code><span class="tag">ol</span></code> tag.</p>
+        <pre class="prettyprint lang-html"><xmp>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+        </xmp></pre> <br><br><b>Will be rendered as: </b>
+
+        <div class="output">
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+
+        <h2>Unordered List</h2>
+        <p>An unordered list starts with <code><span class="tag">ul</span></code> tag and each item in the list starts with the <code><span class="tag">li</span></code> tag, both have ending tag. The bullets type can be changed using the type attribute (<code>type="square"</code>) of <code><span class="tag">ul</span></code> tag.</p>
+        <pre class="prettyprint lang-html"><xmp>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+        </xmp></pre> <br><br><b>Will be rendered as: </b>
+
+        <div class="output">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <h2>Defination List</h2>
+        <p>A defination list starts with <code><span class="tag">dl</span></code> tag and each term starts with <code><span class="tag">dt</span></code> tag and the defination of the term starts with <code><span class="tag">dd</span></code>, all having ending tag.</p>
+        <pre class="prettyprint lang-html"><xmp>
+<dl>
+    <dt>Term 1</dt>
+    <dd>- Term 1 is the first term in this list</dd>
+    
+    <dt>Term 2</dt>
+    <dd>- Term 2 is not the first term in this list</dd>
+</dl>
+        </xmp></pre> <br><br><b>Will be rendered as: </b>
+
+        <div class="output">
+            <dl>
+                <dt>Term 1</dt>
+                <dd>- Term 1 is the first term in this list</dd>
+                
+                <dt>Term 2</dt>
+                <dd>- Term 2 is not the first term in this list</dd>
+            </dl>
+        </div>
     </section>
 
     <hr>

@@ -129,7 +129,7 @@ nav li:hover a i { opacity: 1; }
 
 hr {
     margin: 1rem auto;
-    max-width: 900px;
+    max-width: 880px;
     /* color: var(--color-red);        */
     height: 3px;
     background-color: var(--color-red);
@@ -139,14 +139,15 @@ hr {
 
 footer {
     text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.75rem;
 }
 
 /* Learn Page Styles */
 section {
     max-width: 900px;
     margin: auto;
+    /* padding: 0.3rem; */
 }
 
 section.content {
@@ -222,6 +223,15 @@ section p code {
     border: 1px solid #555;
     border-radius: 3px;
     font-size: 0.9rem;
+}
+
+section div.output { 
+    background: #fff;
+    font-family: sans-serif;
+    border: 1px solid black;
+    margin: 0.75rem;
+    padding: 1.5rem;
+    border-radius: 3px;
 }
 
 iframe.output {
