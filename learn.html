@@ -229,6 +229,56 @@
     </section>
 
     <hr>
+    <section id="tables">
+        <h1>Tables</h1>
+        <p>Tables in HTML allows us to arrange data in rows and columns. The <code><span class="tag">table</span></code> tag is used to define the table. A table row can be created using <code><span class="tag">tr</span></code> tag. The content in a cell can be in between the <code><span class="tag">td</span></code> (table data) and <code><span class="tag">th</span></code> (table header) tag.</p>
+        <p>Additional styles can be added using css in the <code><span class="tag">style</span></code> tag, use border property, to give border to the table.</p>
+        <p>The <code><span class="tag">caption</span></code> tag allows us to give title to the table.</p>
+        <pre class="prettyprint"><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid; 
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>A random table</caption>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        
+        <tr>
+            <th>row 1, Column 1</th>
+            <th>row 1, Column 2</th>
+            <th>row 1, Column 3</th>
+        </tr>
+        
+        <tr>
+            <th>row 2, Column 1</th>
+            <th>row 2, Column 2</th>
+            <th>row 2, Column 3</th>
+        </tr>
+        
+        <tr>
+            <th>row 3, Column 1</th>
+            <th>row 3, Column 2</th>
+            <th>row 3, Column 3</th>
+        </tr>
+    </table>
+</body>
+</html>
+        </xmp></pre>
+        <iframe src="./examples/tables.html" frameborder="0" class="output"></iframe>
+    </section>
+
+    <hr>
     <footer>
         <small class="font-fira">&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
     </footer>
