@@ -279,6 +279,60 @@
     </section>
 
     <hr>
+    <section id="forms">
+        <h1>Forms</h1>
+        <p>Forms can be created using the <code><span class="tag">form</span></code> tag, and the input elements can be placed inside it, The <code><span class="tag">label</span></code> tag defines a label for the element.Using forms taking input from the user becomes very easy.</p>
+        <p>The <code><span class="tag">input</span></code> tag is one of the elements which allow us to take input from the user, it has a type attribute which defines what type of input will it take, the values for type attribute are "text", "submit", "reset", "checkbox", "radio", lets look at an example of input</p>
+        <pre class="prettyprint"><xmp>
+<form>
+    <label for="name">Name: </label>
+    <input type="text" id="name">
+</form>
+        </xmp></pre>
+        <div class="output">
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+            </form>
+        </div>
+        <p><code><span class="tag">textarea</span></code> tag can be used to add a larger text input</p>
+        <pre class="prettyprint"><xmp>
+<form>
+    <label for="review">Review: </label>
+    <textarea id="review"></textarea>
+</form>
+        </xmp></pre>
+        <div class="output">
+            <form>
+                <label for="review">Review: </label>
+                <textarea id="review"></textarea>
+            </form>
+        </div>
+
+        <p>using the <code><span class="tag">select</span></code> and <code><span class="tag">option</span></code> tag a drop down list can be created: </p>
+        <pre class="prettyprint"><xmp>
+<form>
+    <label for="option">Option: </label>
+    <select id="option">
+        <option value="o1">Option 1</option>
+        <option value="o2">Option 2</option>
+        <option value="o3">Option 3</option>
+    </select>
+</form>
+        </xmp></pre>
+        <div class="output">
+            <form>
+                <label for="option">Option: </label>
+                <select id="option">
+                    <option value="o1">Option 1</option>
+                    <option value="o2">Option 2</option>
+                    <option value="o3">Option 3</option>
+                </select>
+            </form>
+        </div>
+    </section>
+
+    <hr>
     <footer>
         <small class="font-fira">&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
     </footer>
