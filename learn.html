@@ -10,18 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- Google code prettify - Syntax highlighting -->
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-
+    <!-- Icon for the webpage -->
     <link rel="shortcut icon" href="./assets/html-5.png" type="image/x-icon">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="HTML Playground"/>
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="HTML Playground"/>
-    <meta property="og:url" content="https://yp-gpp.github.io/HTML-Playground"/>
-    <meta property="og:description" content="Play and Learn HTML">
-    <meta property="og:image" content="https://yp-gpp.github.io/HTML-Playground/images/og-html.png">
-    <meta property="og:image:width" content="1920"/>
-    <meta property="og:image:height" content="1080"/>
 </head>
 <body>
     <!-- Nav Bar -->
@@ -52,12 +42,15 @@
         </div>
     </section>
 
+    <!-- basics (content) -->
     <hr>
     <section id="basics">
         <h1>Basics</h1>
         <p>When writting HTML, a basic layout is to be followed, it looks like: </p>
 
-        <pre class="prettyprint language-html"><xmp>
+        <!-- Code -->
+        <!-- xmp tag considers the content b/w it as xmp, which allows us to write html directly inside html, which wont be rendered... perfect for the usecase -->
+        <pre class="prettyprint language-html"><xmp> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -72,6 +65,7 @@
         <p>Let's try to understand what this template is, <code><span class="tag">!Doctype html</span></code> is declaring the type of document you are writting, in this case we are writting html, it does not have any closing tag.. The <code><span class="tag">html</span></code> tag wraps around the whole content of the webpage, it has a closing tag <code><span class="tag">/html</span></code>. The <code><span class="tag">head</span></code> tag contains the metadata about the html document, <code><span class="tag">title</span></code> is one of the tag used inside the <code><span class="tag">head</span></code>, which is used to define the title of the page which we are able to see on the tab of browser. the <code><span class="tag">body</span></code> is the tag in which the content which is to be displayed to the user is written. All these tags also have a closing tag.</p>
     </section>
 
+    <!-- heading -->
     <hr>
     <section id="headings">
         <h1>Headings</h1>
@@ -104,6 +98,7 @@
         <iframe src="examples/headings.html" title="Output:" class="output" id="heading-frame" frameborder="0"></iframe>
     </section>
 
+    <!-- text-formatting -->
     <hr>
     <section id="text-formatting">
         <h1>Text Formatting</h1>
@@ -140,6 +135,7 @@
         <p><code><span class="tag">sup</span></code> is used to insert a superscript, <code>X<span class="tag">sub</span>2<span class="tag">/sub</span></code> <span class="font-fira">~~></span> "X<sub>2</sub>".</p>
     </section>
 
+    <!-- image -->
     <hr>
     <section id="image">
         <h1>Images</h1>
@@ -172,6 +168,7 @@
         <p>If you click anywhere on the above image, it will add <code>?x-coordinate,y-coordinate</code> to the URL, check the address bar.</p> 
     </section>
 
+    <!-- lists -->
     <hr>
     <section id="list">
         <h1>Lists</h1>
@@ -287,6 +284,7 @@
         <iframe src="./examples/tables.html" frameborder="0" class="output"></iframe>
     </section>
 
+    <!-- Forms -->
     <hr>
     <section id="forms">
         <h1>Forms</h1>
@@ -341,6 +339,7 @@
         </div>
     </section>
 
+    <!-- Others -->
     <hr>
     <section id="others">
         <h1>Others</h1>
@@ -446,6 +445,7 @@ Some text<br>Some more text
         </div>
     </section>
 
+    <!-- End -->
     <hr>
     <section><center><H1>Thank You!</H1></center></section>
 
